@@ -59,7 +59,6 @@ typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
         case UIGestureRecognizerStateBegan:
         {
             self.hidden = YES;
-            NSLog(@"UIGestureRecognizerStateBegan");
             [[[UIApplication sharedApplication].windows lastObject] addSubview:self.liquidAnimationView];
             CGPoint originCenter = [self convertPoint:CGPointMake(10, 10) toView:(UIWindow *)LAST_WINDOW];
             self.touchesStartPotin = currentPoint;
@@ -77,9 +76,6 @@ typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
         case UIGestureRecognizerStateEnded:
         {
             self.hidden = NO;
-            NSLog(@"%@",NSStringFromCGPoint(currentPoint));
-            NSLog(@"UIGestureRecognizerStateEnded");
-            
             if (distanceBetweenPoints(self.touchesStartPotin, currentPoint) > self.liquidAnimationView.radius * 8) {
                 if (self.dismissCallBackBlock) {
                     self.dismissCallBackBlock(self);
@@ -94,7 +90,6 @@ typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
         case UIGestureRecognizerStateCancelled:
         {
             self.hidden = NO;
-            NSLog(@"UIGestureRecognizerStateEnded");
             [self.liquidAnimationView removeFromSuperview];
         }
             break;
