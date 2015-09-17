@@ -34,7 +34,10 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        HQliquidButton *redPoint = [[HQliquidButton alloc] initWithLocationCenter:CGPointMake(300, 20) bagdeNumber:200];
+        HQliquidButton *redPoint = [[HQliquidButton alloc] initWithLocationCenter:CGPointMake(300, 20) bagdeNumber:200 willDismissCallBack:^(HQliquidButton *liquidButton) {
+            //do something here
+            NSLog(@"I was gone");
+        }];
         [cell addSubview:redPoint];
     }
     return cell;

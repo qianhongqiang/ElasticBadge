@@ -13,6 +13,6 @@
 @property (nonatomic, assign, readonly) int bagdeNumber;
 @property (nonatomic, strong) UIColor *HQ_textColor;
 
--(instancetype)initWithLocationCenter:(CGPoint)center bagdeNumber:(int)badgeNumber;
+-(instancetype)initWithLocationCenter:(CGPoint)center bagdeNumber:(int)badgeNumber willDismissCallBack:(void(^)(HQliquidButton *liquidButton))dismiss;
 
 @end

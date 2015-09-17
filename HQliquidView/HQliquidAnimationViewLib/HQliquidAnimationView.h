@@ -14,6 +14,13 @@ typedef NS_ENUM(NSInteger, HQliquidAnimationViewState) {
     HQliquidAnimationViewStateSeperated = 2,    //处于分离状态，当分离后，距离靠近之后，并不会再度粘连
 };
 
+static inline CGFloat distanceBetweenPoints (CGPoint pointA, CGPoint pointB) {
+    CGFloat deltaX = pointB.x - pointA.x;
+    CGFloat deltaY = pointB.y - pointA.y;
+    return sqrt(pow(deltaX, 2) + pow(deltaY, 2));
+};
+
+
 @interface HQliquidAnimationView : UIView
 
 @property (nonatomic, assign) int badgeNumber;

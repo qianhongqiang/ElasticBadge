@@ -13,17 +13,23 @@
 
 #define LAST_WINDOW [[UIApplication sharedApplication].windows lastObject]
 
+typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
+
 
 @interface HQliquidButton()
 
 @property (nonatomic, strong) HQliquidAnimationView *liquidAnimationView; //用于展示数字
+
+@property (nonatomic, copy) willDismissCallBack dismissCallBackBlock;
+
+@property (nonatomic, assign) CGPoint touchesStartPotin;
 
 @end
 
 @implementation HQliquidButton
 
 #pragma mark - initMethod
--(instancetype)initWithLocationCenter:(CGPoint)center bagdeNumber:(int)badgeNumber
+-(instancetype)initWithLocationCenter:(CGPoint)center bagdeNumber:(int)badgeNumber willDismissCallBack:(void (^)(HQliquidButton *))dismiss
 {
     self = [super init];
     if (self) {
@@ -35,6 +41,8 @@
         self.backgroundColor = [UIColor redColor];
         
         self.bagdeNumber = badgeNumber;
+        
+        self.dismissCallBackBlock = dismiss;
         
         //添加手势
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(gestureAction:)];
@@ -54,6 +62,7 @@
             NSLog(@"UIGestureRecognizerStateBegan");
             [[[UIApplication sharedApplication].windows lastObject] addSubview:self.liquidAnimationView];
             CGPoint originCenter = [self convertPoint:CGPointMake(10, 10) toView:(UIWindow *)LAST_WINDOW];
+            self.touchesStartPotin = currentPoint;
             self.liquidAnimationView.oringinCenter = originCenter;
             self.liquidAnimationView.radius = 10;
             self.liquidAnimationView.badgeNumber = self.bagdeNumber;
@@ -68,8 +77,18 @@
         case UIGestureRecognizerStateEnded:
         {
             self.hidden = NO;
+            NSLog(@"%@",NSStringFromCGPoint(currentPoint));
             NSLog(@"UIGestureRecognizerStateEnded");
-            [self.liquidAnimationView removeFromSuperview];
+            
+            if (distanceBetweenPoints(self.touchesStartPotin, currentPoint) > self.liquidAnimationView.radius * 8) {
+                if (self.dismissCallBackBlock) {
+                    self.dismissCallBackBlock(self);
+                }
+                [self.liquidAnimationView removeFromSuperview];
+                [self removeFromSuperview];
+            }else {
+                [self.liquidAnimationView removeFromSuperview];
+            }
         }
             break;
         case UIGestureRecognizerStateCancelled:

@@ -12,11 +12,6 @@
 #define kToRadiusScaleCoefficient       0.05f
 #define kMaxDistanceScaleCoefficient    8.0f
 
-static inline CGFloat distanceBetweenPoints (CGPoint pointA, CGPoint pointB) {
-    CGFloat deltaX = pointB.x - pointA.x;
-    CGFloat deltaY = pointB.y - pointA.y;
-    return sqrt(pow(deltaX, 2) + pow(deltaY, 2));
-};
 
 @interface HQliquidAnimationView()
 
