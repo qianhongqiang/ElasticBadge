@@ -16,8 +16,6 @@
 
 @interface HQliquidButton()
 
-@property (nonatomic, strong) UILabel *badgeLabel; //用于展示数字
-
 @property (nonatomic, strong) HQliquidAnimationView *liquidAnimationView; //用于展示数字
 
 @end
@@ -36,27 +34,13 @@
         self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor redColor];
         
-        _bagdeNumber = badgeNumber;
-        
-        [self addSubview:self.badgeLabel];
-        [self updateBagdeNumber:badgeNumber];
+        self.bagdeNumber = badgeNumber;
         
         //添加手势
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(gestureAction:)];
         [self addGestureRecognizer:pan];
     }
     return self;
-}
-
-#pragma mark - private
--(void)updateBagdeNumber:(int)bagdeNumber
-{
-    _bagdeNumber = bagdeNumber;
-    if (bagdeNumber < 100) {
-        self.badgeLabel.text = [NSString stringWithFormat:@"%d",bagdeNumber];
-    }else{
-        self.badgeLabel.text = @"99+";
-    }
 }
 
 #pragma mark - gesture
@@ -103,16 +87,6 @@
 }
 
 #pragma mark - getter & setter
--(UILabel *)badgeLabel
-{
-    if (!_badgeLabel) {
-        _badgeLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        _badgeLabel.backgroundColor = [UIColor clearColor];
-        _badgeLabel.textColor = [UIColor whiteColor];
-        _badgeLabel.adjustsFontSizeToFitWidth = YES;
-    }
-    return _badgeLabel;
-}
 
 -(HQliquidAnimationView *)liquidAnimationView
 {
@@ -121,6 +95,24 @@
         _liquidAnimationView.backgroundColor = [UIColor clearColor];
     }
     return _liquidAnimationView;
+}
+
+- (void)setBagdeNumber:(int)bagdeNumber {
+    _bagdeNumber = bagdeNumber;
+    [self setNeedsDisplay];
+}
+
+-(void)drawRect:(CGRect)rect {
+    NSMutableParagraphStyle *paragraphMaking = [[NSMutableParagraphStyle alloc] init];
+    paragraphMaking.alignment = NSTextAlignmentCenter;
+    BOOL isOverFlow = self.bagdeNumber > 99;
+    NSString *titleMaking = isOverFlow ? @"99+" : [NSString stringWithFormat:@"%d",self.bagdeNumber];
+    NSDictionary *attributesMaking = @{
+                                       NSParagraphStyleAttributeName:paragraphMaking,
+                                       NSFontAttributeName:[UIFont boldSystemFontOfSize:isOverFlow ? 10: 15],
+                                       NSForegroundColorAttributeName:[UIColor whiteColor],
+                                       };
+    [titleMaking drawInRect:CGRectMake(0, isOverFlow ? 3 : 1, rect.size.width, rect.size.height - 6) withAttributes:attributesMaking];
 }
 
 @end

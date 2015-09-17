@@ -85,7 +85,7 @@ static inline CGFloat distanceBetweenPoints (CGPoint pointA, CGPoint pointB) {
                                            NSFontAttributeName:[UIFont boldSystemFontOfSize:isOverFlow ? 10: 15],
                                            NSForegroundColorAttributeName:[UIColor whiteColor],
                                            };
-        float offset = isOverFlow ? 5 : 0;
+        float offset = isOverFlow ? 3 : 0;
         [titleMaking drawInRect:CGRectMake(_currentMovingPoint.x - 10, _currentMovingPoint.y - 10 +offset, 20, 20) withAttributes:attributesMaking];
         
     }else{//未分离

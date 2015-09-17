@@ -11,9 +11,8 @@
 @interface HQliquidButton : UIView
 
 @property (nonatomic, assign, readonly) int bagdeNumber;
+@property (nonatomic, strong) UIColor *HQ_textColor;
 
 -(instancetype)initWithLocationCenter:(CGPoint)center bagdeNumber:(int)badgeNumber;
-
--(void)updateBagdeNumber:(int)bagdeNumber;
 
 @end
