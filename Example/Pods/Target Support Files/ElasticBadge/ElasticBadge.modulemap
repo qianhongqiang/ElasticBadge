@@ -1,0 +1,6 @@
+framework module ElasticBadge {
+  umbrella header "ElasticBadge-umbrella.h"
+
+  export *
+  module * { export * }
+}

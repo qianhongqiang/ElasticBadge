@@ -1,0 +1,16 @@
+PODS:
+  - ElasticBadge (0.1.0)
+
+DEPENDENCIES:
+  - ElasticBadge (from `../`)
+
+EXTERNAL SOURCES:
+  ElasticBadge:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ElasticBadge: b62e52b275af1ea9df74974abb6fe6b97d947c08
+
+PODFILE CHECKSUM: 1dab12e72bc3407dd73411b4c1443d99991f49db
+
+COCOAPODS: 1.2.1

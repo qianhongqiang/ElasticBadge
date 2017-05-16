@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		372C3A799BD72891123F78FC961D7425 /* Pods-ElasticBadge_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF5E3DAB7FE76BDAAE359D68B96E667 /* Pods-ElasticBadge_Example-dummy.m */; };
+		5D6C5E834DF5486F63AF260715495000 /* ElasticBadge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE8A5D198DDDDBF7868495D1381371 /* ElasticBadge-dummy.m */; };
+		62DF273431F45423E6999ED089591AEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6B58CB1C13BC28F74AE572CCC97D070C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7AA669CEC94729933D4CC7B849D050E7 /* HQliquidButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25178029867D9BACE9EB8840DF3626BA /* HQliquidButton.m */; };
+		7EDA0F3C38F61CD84940146E42A032EE /* Pods-ElasticBadge_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA545D5A3CCE041AF7B5E5BCBA005E2 /* Pods-ElasticBadge_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DB0DACA524C3486E19D8366F5A7B207 /* HQliquidButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4530DD098E712185BFEB693BD3917A36 /* HQliquidButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95771345C42809D1500BBADFA3A1B29D /* HQliquidAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3393B7008DBC4CB35C46C7C0A1B544 /* HQliquidAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B0ADE90B2275F918AF1EC6172C4734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AB3CA95CA54C29F0D12798F67E778020 /* HQliquidAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E238E66DB4CF9BBA360BE2561931E7 /* HQliquidAnimationView.m */; };
+		AEA64E604E1A3DB1B35EFD4D66CF13A3 /* Pods-ElasticBadge_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4885B3617F1724BD84C7A9F81AEBF28 /* Pods-ElasticBadge_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D752AF28F677070D2840A5FC35E957B6 /* Pods-ElasticBadge_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C46DA7634FB04D032B56EE5E31233B /* Pods-ElasticBadge_Tests-dummy.m */; };
+		D946FBEBC7EAA8532420ED213B7B9E16 /* ElasticBadge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A99F883603BE61DC2A16EAEB9473E240 /* ElasticBadge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B8F35E6FDB22F6DE200035A6DF9C999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F2136D3DDDDCDBAC5A2B767066A9845;
+			remoteInfo = ElasticBadge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E3393B7008DBC4CB35C46C7C0A1B544 /* HQliquidAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQliquidAnimationView.h; sourceTree = "<group>"; };
+		1CA545D5A3CCE041AF7B5E5BCBA005E2 /* Pods-ElasticBadge_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElasticBadge_Tests-umbrella.h"; sourceTree = "<group>"; };
+		25178029867D9BACE9EB8840DF3626BA /* HQliquidButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQliquidButton.m; sourceTree = "<group>"; };
+		3797C3D9D321702EF54DF79F4717D80C /* ElasticBadge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElasticBadge.xcconfig; sourceTree = "<group>"; };
+		38EB565E3F20267253A44A0E400647D8 /* Pods-ElasticBadge_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElasticBadge_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4530DD098E712185BFEB693BD3917A36 /* HQliquidButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQliquidButton.h; sourceTree = "<group>"; };
+		4F757E799FFE968D7881630A4D6F6DC6 /* Pods-ElasticBadge_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElasticBadge_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		50E25E61FCB2A390BDAB7B34295ED46E /* ElasticBadge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElasticBadge-prefix.pch"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68F6A8B135E612C0A89AEED1D5B9C040 /* Pods-ElasticBadge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElasticBadge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		72E238E66DB4CF9BBA360BE2561931E7 /* HQliquidAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQliquidAnimationView.m; sourceTree = "<group>"; };
+		744BC8DAA75F01F9D0002DD0B106B562 /* Pods-ElasticBadge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElasticBadge_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8C486759C8E5E926081FE862F66B3ED3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5E9232300AD1F39AD2721BEEB775C2 /* Pods-ElasticBadge_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ElasticBadge_Tests.modulemap"; sourceTree = "<group>"; };
+		92C46DA7634FB04D032B56EE5E31233B /* Pods-ElasticBadge_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElasticBadge_Tests-dummy.m"; sourceTree = "<group>"; };
+		9363EDA5602E3EBD57B852420AB0FA2A /* Pods_ElasticBadge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElasticBadge_Example.framework; path = "Pods-ElasticBadge_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C127663EB21C3F82C6050DD66057DFB /* Pods-ElasticBadge_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElasticBadge_Tests-resources.sh"; sourceTree = "<group>"; };
+		A99F883603BE61DC2A16EAEB9473E240 /* ElasticBadge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElasticBadge-umbrella.h"; sourceTree = "<group>"; };
+		AE095CF7820E6EE8F17F327B9A163EFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22078276C708D1192D2FA036ACC2477 /* Pods-ElasticBadge_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElasticBadge_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B2F37C8632FC2A438E8F676246F9EB1B /* Pods-ElasticBadge_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElasticBadge_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B4885B3617F1724BD84C7A9F81AEBF28 /* Pods-ElasticBadge_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElasticBadge_Example-umbrella.h"; sourceTree = "<group>"; };
+		BC049DC1F38BC6D352CE9E847A553B30 /* Pods-ElasticBadge_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElasticBadge_Example-resources.sh"; sourceTree = "<group>"; };
+		BCEE8A5D198DDDDBF7868495D1381371 /* ElasticBadge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElasticBadge-dummy.m"; sourceTree = "<group>"; };
+		BD100B5D3FE3630D51B8A3C528F9674D /* Pods-ElasticBadge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElasticBadge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C1E0368FD1AE70171D72958793404C13 /* Pods-ElasticBadge_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElasticBadge_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C5086AAE26141DE09593CD8CB97143AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF5E3DAB7FE76BDAAE359D68B96E667 /* Pods-ElasticBadge_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElasticBadge_Example-dummy.m"; sourceTree = "<group>"; };
+		D976558B423C8422401027F1408C981D /* Pods-ElasticBadge_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ElasticBadge_Example.modulemap"; sourceTree = "<group>"; };
+		E5E4148DE99E2CE7394FE0372379E76A /* Pods-ElasticBadge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElasticBadge_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EE14E855E9252827A12434EB2E52B42F /* Pods_ElasticBadge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElasticBadge_Tests.framework; path = "Pods-ElasticBadge_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66C33C0DEBF5519B41E0F617BDD4477 /* ElasticBadge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ElasticBadge.framework; path = ElasticBadge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA383FA8F5DCD56B37B9FE9C6013A23A /* ElasticBadge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ElasticBadge.modulemap; sourceTree = "<group>"; };
+		FCFE9908BB75AB86C6E51682C761C0A5 /* Pods-ElasticBadge_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElasticBadge_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB746F7C8F158D1CA25C0CB16701A69A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B58CB1C13BC28F74AE572CCC97D070C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE467608D32C6A994CDA027D453CCCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B0ADE90B2275F918AF1EC6172C4734 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AED2E29148315060284B362E245414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DF273431F45423E6999ED089591AEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BA2DE8BEEA246D30B8C8BB50CDDF715 /* Pods-ElasticBadge_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C5086AAE26141DE09593CD8CB97143AE /* Info.plist */,
+				D976558B423C8422401027F1408C981D /* Pods-ElasticBadge_Example.modulemap */,
+				38EB565E3F20267253A44A0E400647D8 /* Pods-ElasticBadge_Example-acknowledgements.markdown */,
+				C1E0368FD1AE70171D72958793404C13 /* Pods-ElasticBadge_Example-acknowledgements.plist */,
+				CAF5E3DAB7FE76BDAAE359D68B96E667 /* Pods-ElasticBadge_Example-dummy.m */,
+				FCFE9908BB75AB86C6E51682C761C0A5 /* Pods-ElasticBadge_Example-frameworks.sh */,
+				BC049DC1F38BC6D352CE9E847A553B30 /* Pods-ElasticBadge_Example-resources.sh */,
+				B4885B3617F1724BD84C7A9F81AEBF28 /* Pods-ElasticBadge_Example-umbrella.h */,
+				744BC8DAA75F01F9D0002DD0B106B562 /* Pods-ElasticBadge_Example.debug.xcconfig */,
+				E5E4148DE99E2CE7394FE0372379E76A /* Pods-ElasticBadge_Example.release.xcconfig */,
+			);
+			name = "Pods-ElasticBadge_Example";
+			path = "Target Support Files/Pods-ElasticBadge_Example";
+			sourceTree = "<group>";
+		};
+		4D9809C886F8FF4546DE73C918FCDC95 /* ElasticBadge */ = {
+			isa = PBXGroup;
+			children = (
+				71950E44EA862431D8C45C518DB71156 /* ElasticBadge */,
+				834A3D4A3FCFEB1297C0E02869197809 /* Support Files */,
+			);
+			name = ElasticBadge;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		57AB99C567341C0933E1D3B5311E3F3A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D9809C886F8FF4546DE73C918FCDC95 /* ElasticBadge */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		71950E44EA862431D8C45C518DB71156 /* ElasticBadge */ = {
+			isa = PBXGroup;
+			children = (
+				B0D3AC731B02813B2A876E41AE20612D /* Classes */,
+			);
+			name = ElasticBadge;
+			path = ElasticBadge;
+			sourceTree = "<group>";
+		};
+		779CB144E963B747D56CF224B656DAD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F66C33C0DEBF5519B41E0F617BDD4477 /* ElasticBadge.framework */,
+				9363EDA5602E3EBD57B852420AB0FA2A /* Pods_ElasticBadge_Example.framework */,
+				EE14E855E9252827A12434EB2E52B42F /* Pods_ElasticBadge_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				57AB99C567341C0933E1D3B5311E3F3A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				779CB144E963B747D56CF224B656DAD3 /* Products */,
+				F145AC2D76577DA12D406F8F287980F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		834A3D4A3FCFEB1297C0E02869197809 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA383FA8F5DCD56B37B9FE9C6013A23A /* ElasticBadge.modulemap */,
+				3797C3D9D321702EF54DF79F4717D80C /* ElasticBadge.xcconfig */,
+				BCEE8A5D198DDDDBF7868495D1381371 /* ElasticBadge-dummy.m */,
+				50E25E61FCB2A390BDAB7B34295ED46E /* ElasticBadge-prefix.pch */,
+				A99F883603BE61DC2A16EAEB9473E240 /* ElasticBadge-umbrella.h */,
+				8C486759C8E5E926081FE862F66B3ED3 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ElasticBadge";
+			sourceTree = "<group>";
+		};
+		9E5E53CB6719837C5466A5793C21BB51 /* Pods-ElasticBadge_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE095CF7820E6EE8F17F327B9A163EFC /* Info.plist */,
+				8F5E9232300AD1F39AD2721BEEB775C2 /* Pods-ElasticBadge_Tests.modulemap */,
+				B2F37C8632FC2A438E8F676246F9EB1B /* Pods-ElasticBadge_Tests-acknowledgements.markdown */,
+				B22078276C708D1192D2FA036ACC2477 /* Pods-ElasticBadge_Tests-acknowledgements.plist */,
+				92C46DA7634FB04D032B56EE5E31233B /* Pods-ElasticBadge_Tests-dummy.m */,
+				4F757E799FFE968D7881630A4D6F6DC6 /* Pods-ElasticBadge_Tests-frameworks.sh */,
+				9C127663EB21C3F82C6050DD66057DFB /* Pods-ElasticBadge_Tests-resources.sh */,
+				1CA545D5A3CCE041AF7B5E5BCBA005E2 /* Pods-ElasticBadge_Tests-umbrella.h */,
+				68F6A8B135E612C0A89AEED1D5B9C040 /* Pods-ElasticBadge_Tests.debug.xcconfig */,
+				BD100B5D3FE3630D51B8A3C528F9674D /* Pods-ElasticBadge_Tests.release.xcconfig */,
+			);
+			name = "Pods-ElasticBadge_Tests";
+			path = "Target Support Files/Pods-ElasticBadge_Tests";
+			sourceTree = "<group>";
+		};
+		B0D3AC731B02813B2A876E41AE20612D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E3393B7008DBC4CB35C46C7C0A1B544 /* HQliquidAnimationView.h */,
+				72E238E66DB4CF9BBA360BE2561931E7 /* HQliquidAnimationView.m */,
+				4530DD098E712185BFEB693BD3917A36 /* HQliquidButton.h */,
+				25178029867D9BACE9EB8840DF3626BA /* HQliquidButton.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F145AC2D76577DA12D406F8F287980F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2DE8BEEA246D30B8C8BB50CDDF715 /* Pods-ElasticBadge_Example */,
+				9E5E53CB6719837C5466A5793C21BB51 /* Pods-ElasticBadge_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52245E011B539733A14CCBDDF91377DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA64E604E1A3DB1B35EFD4D66CF13A3 /* Pods-ElasticBadge_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B20253F8D57676840F18E736E0B27B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDA0F3C38F61CD84940146E42A032EE /* Pods-ElasticBadge_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C425E838BB383F5C17FD0653A12F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D946FBEBC7EAA8532420ED213B7B9E16 /* ElasticBadge-umbrella.h in Headers */,
+				95771345C42809D1500BBADFA3A1B29D /* HQliquidAnimationView.h in Headers */,
+				8DB0DACA524C3486E19D8366F5A7B207 /* HQliquidButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		507B5F9B575CB323F889E265D5982538 /* Pods-ElasticBadge_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6977E7A96BE0D9380FA5F0A1E251D26 /* Build configuration list for PBXNativeTarget "Pods-ElasticBadge_Example" */;
+			buildPhases = (
+				2CBBDD43501F4C0C2BF304B09218A4B8 /* Sources */,
+				D0AED2E29148315060284B362E245414 /* Frameworks */,
+				52245E011B539733A14CCBDDF91377DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DFF8F1C325E7F4C1306D9FE9194C2D /* PBXTargetDependency */,
+			);
+			name = "Pods-ElasticBadge_Example";
+			productName = "Pods-ElasticBadge_Example";
+			productReference = 9363EDA5602E3EBD57B852420AB0FA2A /* Pods_ElasticBadge_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F2136D3DDDDCDBAC5A2B767066A9845 /* ElasticBadge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B87FB16B2CE2A040E8A45AA7FF9ACD /* Build configuration list for PBXNativeTarget "ElasticBadge" */;
+			buildPhases = (
+				63A3C5CAB6FA55F2F18FDAEC68A1FCC8 /* Sources */,
+				BB746F7C8F158D1CA25C0CB16701A69A /* Frameworks */,
+				94C425E838BB383F5C17FD0653A12F23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElasticBadge;
+			productName = ElasticBadge;
+			productReference = F66C33C0DEBF5519B41E0F617BDD4477 /* ElasticBadge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB8EA91EDAA3FDA7F1D28A2AF33B57AA /* Pods-ElasticBadge_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941C831575D5599691C9D96CDD8ADC5D /* Build configuration list for PBXNativeTarget "Pods-ElasticBadge_Tests" */;
+			buildPhases = (
+				7317F7072BECA822875ACCE5526A7BC2 /* Sources */,
+				BE467608D32C6A994CDA027D453CCCC2 /* Frameworks */,
+				7B20253F8D57676840F18E736E0B27B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ElasticBadge_Tests";
+			productName = "Pods-ElasticBadge_Tests";
+			productReference = EE14E855E9252827A12434EB2E52B42F /* Pods_ElasticBadge_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 779CB144E963B747D56CF224B656DAD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F2136D3DDDDCDBAC5A2B767066A9845 /* ElasticBadge */,
+				507B5F9B575CB323F889E265D5982538 /* Pods-ElasticBadge_Example */,
+				BB8EA91EDAA3FDA7F1D28A2AF33B57AA /* Pods-ElasticBadge_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CBBDD43501F4C0C2BF304B09218A4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372C3A799BD72891123F78FC961D7425 /* Pods-ElasticBadge_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A3C5CAB6FA55F2F18FDAEC68A1FCC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6C5E834DF5486F63AF260715495000 /* ElasticBadge-dummy.m in Sources */,
+				AB3CA95CA54C29F0D12798F67E778020 /* HQliquidAnimationView.m in Sources */,
+				7AA669CEC94729933D4CC7B849D050E7 /* HQliquidButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7317F7072BECA822875ACCE5526A7BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D752AF28F677070D2840A5FC35E957B6 /* Pods-ElasticBadge_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4DFF8F1C325E7F4C1306D9FE9194C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ElasticBadge;
+			target = 9F2136D3DDDDCDBAC5A2B767066A9845 /* ElasticBadge */;
+			targetProxy = 6B8F35E6FDB22F6DE200035A6DF9C999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17538129E0FD8E452FEF0D5432555699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3797C3D9D321702EF54DF79F4717D80C /* ElasticBadge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ElasticBadge/ElasticBadge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ElasticBadge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ElasticBadge/ElasticBadge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ElasticBadge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		400CF9F0564B5E7B33A4394B9B52852E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E4148DE99E2CE7394FE0372379E76A /* Pods-ElasticBadge_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ElasticBadge_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElasticBadge_Example/Pods-ElasticBadge_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ElasticBadge_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6764DFCF81401628B3A0FF3D619925A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F6A8B135E612C0A89AEED1D5B9C040 /* Pods-ElasticBadge_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ElasticBadge_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElasticBadge_Tests/Pods-ElasticBadge_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ElasticBadge_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803B49999A4F50A94D933256BB09AEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD100B5D3FE3630D51B8A3C528F9674D /* Pods-ElasticBadge_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ElasticBadge_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElasticBadge_Tests/Pods-ElasticBadge_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ElasticBadge_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86D06E848B50879703D32B03AF3B0E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744BC8DAA75F01F9D0002DD0B106B562 /* Pods-ElasticBadge_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ElasticBadge_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElasticBadge_Example/Pods-ElasticBadge_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ElasticBadge_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F347B056705EEF8A8A2D1D536EC624C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3797C3D9D321702EF54DF79F4717D80C /* ElasticBadge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ElasticBadge/ElasticBadge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ElasticBadge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ElasticBadge/ElasticBadge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ElasticBadge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B87FB16B2CE2A040E8A45AA7FF9ACD /* Build configuration list for PBXNativeTarget "ElasticBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17538129E0FD8E452FEF0D5432555699 /* Debug */,
+				F347B056705EEF8A8A2D1D536EC624C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		941C831575D5599691C9D96CDD8ADC5D /* Build configuration list for PBXNativeTarget "Pods-ElasticBadge_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6764DFCF81401628B3A0FF3D619925A0 /* Debug */,
+				803B49999A4F50A94D933256BB09AEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6977E7A96BE0D9380FA5F0A1E251D26 /* Build configuration list for PBXNativeTarget "Pods-ElasticBadge_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D06E848B50879703D32B03AF3B0E15 /* Debug */,
+				400CF9F0564B5E7B33A4394B9B52852E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
