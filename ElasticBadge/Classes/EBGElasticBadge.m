@@ -7,7 +7,7 @@
 //
 
 #import "EBGElasticBadge.h"
-#import "HQliquidAnimationView.h"
+#import "EBGAnimationView.h"
 
 #define KEY_WINDOW [UIApplication sharedApplication].keyWindow
 
@@ -18,7 +18,7 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
 
 @interface EBGElasticBadge()
 
-@property (nonatomic, strong) HQliquidAnimationView *liquidAnimationView; //用于展示数字
+@property (nonatomic, strong) EBGAnimationView *liquidAnimationView; //用于展示数字
 
 @property (nonatomic, copy) willDismissCallBack dismissCallBackBlock;
 
@@ -104,10 +104,10 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
 
 #pragma mark - getter & setter
 
--(HQliquidAnimationView *)liquidAnimationView
+-(EBGAnimationView *)liquidAnimationView
 {
     if (!_liquidAnimationView) {
-        _liquidAnimationView = [[HQliquidAnimationView alloc] initWithFrame:KEY_WINDOW.bounds];
+        _liquidAnimationView = [[EBGAnimationView alloc] initWithFrame:KEY_WINDOW.bounds];
         _liquidAnimationView.backgroundColor = [UIColor clearColor];
     }
     return _liquidAnimationView;

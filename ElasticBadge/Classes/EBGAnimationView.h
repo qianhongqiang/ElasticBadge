@@ -1,17 +1,17 @@
 //
-//  HQliquidAnimationView.h
-//  HQliquidView
+//  EBGAnimationView.h
+//  Pods
 //
-//  Created by qianhongqiang on 15/5/29.
-//  Copyright (c) 2015年 QianHongQiang. All rights reserved.
+//  Created by qianhongqiang on 2017/5/16.
+//
 //
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, HQliquidAnimationViewState) {
-    HQliquidAnimationViewStateUnknown  = 0,   //未知状态
-    HQliquidAnimationViewStateConnect  = 1,     //处于粘连状态
-    HQliquidAnimationViewStateSeperated = 2,    //处于分离状态，当分离后，距离靠近之后，并不会再度粘连
+typedef NS_ENUM(NSInteger, EBGAnimationViewState) {
+    EBGAnimationViewStateUnknown  = 0,   //未知状态
+    EBGAnimationViewStateConnect  = 1,     //处于粘连状态
+    EBGAnimationViewStateSeperated = 2,    //处于分离状态，当分离后，距离靠近之后，并不会再度粘连
 };
 
 static inline CGFloat distanceBetweenPoints (CGPoint pointA, CGPoint pointB) {
@@ -20,8 +20,7 @@ static inline CGFloat distanceBetweenPoints (CGPoint pointA, CGPoint pointB) {
     return sqrt(pow(deltaX, 2) + pow(deltaY, 2));
 };
 
-
-@interface HQliquidAnimationView : UIView
+@interface EBGAnimationView : UIView
 
 @property (nonatomic, assign) int badgeNumber;
 

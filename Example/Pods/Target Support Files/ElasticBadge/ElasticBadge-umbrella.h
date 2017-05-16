@@ -10,8 +10,8 @@
 #endif
 #endif
 
+#import "EBGAnimationView.h"
 #import "EBGElasticBadge.h"
-#import "HQliquidAnimationView.h"
 
 FOUNDATION_EXPORT double ElasticBadgeVersionNumber;
 FOUNDATION_EXPORT const unsigned char ElasticBadgeVersionString[];

@@ -1,19 +1,19 @@
 //
-//  HQliquidAnimationView.m
-//  HQliquidView
+//  EBGAnimationView.m
+//  Pods
 //
-//  Created by qianhongqiang on 15/5/29.
-//  Copyright (c) 2015年 QianHongQiang. All rights reserved.
+//  Created by qianhongqiang on 2017/5/16.
+//
 //
 
-#import "HQliquidAnimationView.h"
+#import "EBGAnimationView.h"
 
 #define kFromRadiusScaleCoefficient     0.09f
 #define kToRadiusScaleCoefficient       0.05f
 #define kMaxDistanceScaleCoefficient    8.0f
 
 
-@interface HQliquidAnimationView()
+@interface EBGAnimationView()
 
 @property (nonatomic, assign) float fromRadius;
 @property (nonatomic, assign) float toRadius;
@@ -22,11 +22,11 @@
 
 @property (nonatomic, assign) float currentDistance;
 
-@property (nonatomic, assign) HQliquidAnimationViewState currentState;
+@property (nonatomic, assign) EBGAnimationViewState currentState;
 
 @end
 
-@implementation HQliquidAnimationView
+@implementation EBGAnimationView
 
 #pragma mark - setter
 -(void)setOringinCenter:(CGPoint)oringinCenter
@@ -51,7 +51,7 @@
 {
     _currentDistance = currentDistance;
     if (_currentDistance > _maxDistance) {
-        _currentState = HQliquidAnimationViewStateSeperated;
+        _currentState = EBGAnimationViewStateSeperated;
     }
 }
 
@@ -63,7 +63,7 @@
 
 #pragma mark drawCode
 - (void)drawRect:(CGRect)rect {
-    if (_maxDistance < _currentDistance || _currentState == HQliquidAnimationViewStateSeperated) {//分离
+    if (_maxDistance < _currentDistance || _currentState == EBGAnimationViewStateSeperated) {//分离
         
         CGContextRef ctx = UIGraphicsGetCurrentContext();
         CGContextSetFillColorWithColor(ctx, self.borderColor.CGColor);
@@ -99,7 +99,7 @@
 #pragma mark - public
 -(void)clearViewState
 {
-    _currentState = HQliquidAnimationViewStateConnect;
+    self.currentState = EBGAnimationViewStateConnect;
 }
 
 #pragma mark - private
