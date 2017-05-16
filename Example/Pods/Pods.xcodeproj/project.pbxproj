@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19DC753092E999C9637D935F679A8174 /* ElasticBadge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE8A5D198DDDDBF7868495D1381371 /* ElasticBadge-dummy.m */; };
+		2E7979BC8007347A1DCDCEA2D7635373 /* HQliquidAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 495785477BD087520A46ABC4540AC9A0 /* HQliquidAnimationView.m */; };
 		372C3A799BD72891123F78FC961D7425 /* Pods-ElasticBadge_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF5E3DAB7FE76BDAAE359D68B96E667 /* Pods-ElasticBadge_Example-dummy.m */; };
-		5D6C5E834DF5486F63AF260715495000 /* ElasticBadge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE8A5D198DDDDBF7868495D1381371 /* ElasticBadge-dummy.m */; };
+		3F46CCD8894E60672D5E9313E3DF2818 /* ElasticBadge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A99F883603BE61DC2A16EAEB9473E240 /* ElasticBadge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E7AA9DE0945422F181169B3602E5527 /* EBGElasticBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EC7C1849485B76403D5722C4BA8076 /* EBGElasticBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62DF273431F45423E6999ED089591AEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6B58CB1C13BC28F74AE572CCC97D070C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7AA669CEC94729933D4CC7B849D050E7 /* HQliquidButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25178029867D9BACE9EB8840DF3626BA /* HQliquidButton.m */; };
 		7EDA0F3C38F61CD84940146E42A032EE /* Pods-ElasticBadge_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA545D5A3CCE041AF7B5E5BCBA005E2 /* Pods-ElasticBadge_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DB0DACA524C3486E19D8366F5A7B207 /* HQliquidButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4530DD098E712185BFEB693BD3917A36 /* HQliquidButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95771345C42809D1500BBADFA3A1B29D /* HQliquidAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3393B7008DBC4CB35C46C7C0A1B544 /* HQliquidAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1B0ADE90B2275F918AF1EC6172C4734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AB3CA95CA54C29F0D12798F67E778020 /* HQliquidAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E238E66DB4CF9BBA360BE2561931E7 /* HQliquidAnimationView.m */; };
 		AEA64E604E1A3DB1B35EFD4D66CF13A3 /* Pods-ElasticBadge_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4885B3617F1724BD84C7A9F81AEBF28 /* Pods-ElasticBadge_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C407FACBFD94B9E4D420B453CDE0C9CE /* EBGElasticBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 406E80FEDF3450399917961C07697CF2 /* EBGElasticBadge.m */; };
+		CCC4211F0BEAE08546CE1969B7BFB69C /* HQliquidAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4748F3D07829DC9BBB9F1B036C1A779F /* HQliquidAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D752AF28F677070D2840A5FC35E957B6 /* Pods-ElasticBadge_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C46DA7634FB04D032B56EE5E31233B /* Pods-ElasticBadge_Tests-dummy.m */; };
-		D946FBEBC7EAA8532420ED213B7B9E16 /* ElasticBadge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A99F883603BE61DC2A16EAEB9473E240 /* ElasticBadge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,17 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E3393B7008DBC4CB35C46C7C0A1B544 /* HQliquidAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQliquidAnimationView.h; sourceTree = "<group>"; };
 		1CA545D5A3CCE041AF7B5E5BCBA005E2 /* Pods-ElasticBadge_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElasticBadge_Tests-umbrella.h"; sourceTree = "<group>"; };
-		25178029867D9BACE9EB8840DF3626BA /* HQliquidButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQliquidButton.m; sourceTree = "<group>"; };
 		3797C3D9D321702EF54DF79F4717D80C /* ElasticBadge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElasticBadge.xcconfig; sourceTree = "<group>"; };
 		38EB565E3F20267253A44A0E400647D8 /* Pods-ElasticBadge_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElasticBadge_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4530DD098E712185BFEB693BD3917A36 /* HQliquidButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQliquidButton.h; sourceTree = "<group>"; };
+		406E80FEDF3450399917961C07697CF2 /* EBGElasticBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EBGElasticBadge.m; sourceTree = "<group>"; };
+		4748F3D07829DC9BBB9F1B036C1A779F /* HQliquidAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQliquidAnimationView.h; sourceTree = "<group>"; };
+		495785477BD087520A46ABC4540AC9A0 /* HQliquidAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQliquidAnimationView.m; sourceTree = "<group>"; };
 		4F757E799FFE968D7881630A4D6F6DC6 /* Pods-ElasticBadge_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElasticBadge_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		50E25E61FCB2A390BDAB7B34295ED46E /* ElasticBadge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElasticBadge-prefix.pch"; sourceTree = "<group>"; };
+		60EC7C1849485B76403D5722C4BA8076 /* EBGElasticBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EBGElasticBadge.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68F6A8B135E612C0A89AEED1D5B9C040 /* Pods-ElasticBadge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElasticBadge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		72E238E66DB4CF9BBA360BE2561931E7 /* HQliquidAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQliquidAnimationView.m; sourceTree = "<group>"; };
 		744BC8DAA75F01F9D0002DD0B106B562 /* Pods-ElasticBadge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElasticBadge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8C486759C8E5E926081FE862F66B3ED3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F5E9232300AD1F39AD2721BEEB775C2 /* Pods-ElasticBadge_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ElasticBadge_Tests.modulemap"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		71950E44EA862431D8C45C518DB71156 /* ElasticBadge */ = {
 			isa = PBXGroup;
 			children = (
-				B0D3AC731B02813B2A876E41AE20612D /* Classes */,
+				C757583CF8E9611587783AEC75A9EE4A /* Classes */,
 			);
 			name = ElasticBadge;
 			path = ElasticBadge;
@@ -196,24 +196,24 @@
 			path = "Target Support Files/Pods-ElasticBadge_Tests";
 			sourceTree = "<group>";
 		};
-		B0D3AC731B02813B2A876E41AE20612D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0E3393B7008DBC4CB35C46C7C0A1B544 /* HQliquidAnimationView.h */,
-				72E238E66DB4CF9BBA360BE2561931E7 /* HQliquidAnimationView.m */,
-				4530DD098E712185BFEB693BD3917A36 /* HQliquidButton.h */,
-				25178029867D9BACE9EB8840DF3626BA /* HQliquidButton.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C757583CF8E9611587783AEC75A9EE4A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60EC7C1849485B76403D5722C4BA8076 /* EBGElasticBadge.h */,
+				406E80FEDF3450399917961C07697CF2 /* EBGElasticBadge.m */,
+				4748F3D07829DC9BBB9F1B036C1A779F /* HQliquidAnimationView.h */,
+				495785477BD087520A46ABC4540AC9A0 /* HQliquidAnimationView.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -236,6 +236,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		418EAEFDDE66082926F1E8DC5807DAA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7AA9DE0945422F181169B3602E5527 /* EBGElasticBadge.h in Headers */,
+				3F46CCD8894E60672D5E9313E3DF2818 /* ElasticBadge-umbrella.h in Headers */,
+				CCC4211F0BEAE08546CE1969B7BFB69C /* HQliquidAnimationView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52245E011B539733A14CCBDDF91377DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,16 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDA0F3C38F61CD84940146E42A032EE /* Pods-ElasticBadge_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		94C425E838BB383F5C17FD0653A12F23 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D946FBEBC7EAA8532420ED213B7B9E16 /* ElasticBadge-umbrella.h in Headers */,
-				95771345C42809D1500BBADFA3A1B29D /* HQliquidAnimationView.h in Headers */,
-				8DB0DACA524C3486E19D8366F5A7B207 /* HQliquidButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +287,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B87FB16B2CE2A040E8A45AA7FF9ACD /* Build configuration list for PBXNativeTarget "ElasticBadge" */;
 			buildPhases = (
-				63A3C5CAB6FA55F2F18FDAEC68A1FCC8 /* Sources */,
+				5197F788CCC4187F59F655D26C8B700E /* Sources */,
 				BB746F7C8F158D1CA25C0CB16701A69A /* Frameworks */,
-				94C425E838BB383F5C17FD0653A12F23 /* Headers */,
+				418EAEFDDE66082926F1E8DC5807DAA3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -354,13 +354,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63A3C5CAB6FA55F2F18FDAEC68A1FCC8 /* Sources */ = {
+		5197F788CCC4187F59F655D26C8B700E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D6C5E834DF5486F63AF260715495000 /* ElasticBadge-dummy.m in Sources */,
-				AB3CA95CA54C29F0D12798F67E778020 /* HQliquidAnimationView.m in Sources */,
-				7AA669CEC94729933D4CC7B849D050E7 /* HQliquidButton.m in Sources */,
+				C407FACBFD94B9E4D420B453CDE0C9CE /* EBGElasticBadge.m in Sources */,
+				19DC753092E999C9637D935F679A8174 /* ElasticBadge-dummy.m in Sources */,
+				2E7979BC8007347A1DCDCEA2D7635373 /* HQliquidAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

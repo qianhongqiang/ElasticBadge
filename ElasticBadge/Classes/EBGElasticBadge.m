@@ -1,22 +1,22 @@
 //
-//  HQliquidButton.m
-//  HQliquidView
+//  EBGElasticBadge.m
+//  Pods
 //
-//  Created by qianhongqiang on 15/5/29.
-//  Copyright (c) 2015年 QianHongQiang. All rights reserved.
+//  Created by qianhongqiang on 2017/5/16.
+//
 //
 
-#import "HQliquidButton.h"
+#import "EBGElasticBadge.h"
 #import "HQliquidAnimationView.h"
 
 #define KEY_WINDOW [UIApplication sharedApplication].keyWindow
 
 #define LAST_WINDOW [[UIApplication sharedApplication].windows lastObject]
 
-typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
+typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
 
 
-@interface HQliquidButton()
+@interface EBGElasticBadge()
 
 @property (nonatomic, strong) HQliquidAnimationView *liquidAnimationView; //用于展示数字
 
@@ -26,10 +26,12 @@ typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
 
 @end
 
-@implementation HQliquidButton
+@implementation EBGElasticBadge
 
 #pragma mark - initMethod
--(instancetype)initWithLocationCenter:(CGPoint)center bagdeNumber:(int)badgeNumber willDismissCallBack:(void (^)(HQliquidButton *))dismiss
+-(instancetype)initWithLocationCenter:(CGPoint)center
+                          bagdeNumber:(int)badgeNumber
+                  willDismissCallBack:(void (^)(EBGElasticBadge *))dismiss
 {
     self = [super init];
     if (self) {
@@ -93,7 +95,7 @@ typedef void(^willDismissCallBack)(HQliquidButton *liquidButton);
             [self.liquidAnimationView removeFromSuperview];
         }
             break;
-
+            
             
         default:
             break;

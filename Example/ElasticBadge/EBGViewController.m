@@ -7,7 +7,7 @@
 //
 
 #import "EBGViewController.h"
-#import <ElasticBadge/HQliquidButton.h>
+#import <ElasticBadge/EBGElasticBadge.h>
 
 @interface EBGViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -34,7 +34,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        HQliquidButton *redPoint = [[HQliquidButton alloc] initWithLocationCenter:CGPointMake(self.view.bounds.size.width - 40, 20) bagdeNumber:200 willDismissCallBack:^(HQliquidButton *liquidButton) {
+        EBGElasticBadge *redPoint = [[EBGElasticBadge alloc] initWithLocationCenter:CGPointMake(self.view.bounds.size.width - 40, 20) bagdeNumber:200 willDismissCallBack:^(EBGElasticBadge *liquidButton) {
             //do something here
             NSLog(@"I was gone");
         }];
