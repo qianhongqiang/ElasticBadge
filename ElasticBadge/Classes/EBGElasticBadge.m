@@ -18,8 +18,15 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
 
 @interface EBGElasticBadge()
 
-@property (nonatomic, strong) EBGAnimationView *liquidAnimationView; //用于展示数字
 
+/**
+ 实际展示绘制动画的页面
+ */
+@property (nonatomic, strong) EBGAnimationView *liquidAnimationView;
+
+/**
+ 消失时的回调
+ */
 @property (nonatomic, copy) willDismissCallBack dismissCallBackBlock;
 
 @property (nonatomic, assign) CGPoint touchesStartPotin;
@@ -42,9 +49,9 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
         self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor redColor];
         
-        self.bagdeNumber = badgeNumber;
+        _badgeNumber = badgeNumber;
         
-        self.dismissCallBackBlock = dismiss;
+        _dismissCallBackBlock = dismiss;
         
         //添加手势
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(gestureAction:)];
@@ -66,7 +73,7 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
             self.touchesStartPotin = currentPoint;
             self.liquidAnimationView.oringinCenter = originCenter;
             self.liquidAnimationView.radius = 10;
-            self.liquidAnimationView.badgeNumber = self.bagdeNumber;
+            self.liquidAnimationView.badgeNumber = self.badgeNumber;
             [self.liquidAnimationView clearViewState];
         }
             break;
@@ -102,9 +109,21 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
     }
 }
 
-#pragma mark - getter & setter
+-(void)drawRect:(CGRect)rect {
+    NSMutableParagraphStyle *paragraphMaking = [[NSMutableParagraphStyle alloc] init];
+    paragraphMaking.alignment = NSTextAlignmentCenter;
+    BOOL isOverFlow = self.badgeNumber > 99;
+    NSString *titleMaking = isOverFlow ? @"99+" : [NSString stringWithFormat:@"%d",self.badgeNumber];
+    NSDictionary *attributesMaking = @{
+                                       NSParagraphStyleAttributeName:paragraphMaking,
+                                       NSFontAttributeName:[UIFont boldSystemFontOfSize:isOverFlow ? 10: 15],
+                                       NSForegroundColorAttributeName:self.badgeTextColor ? : [UIColor whiteColor],
+                                       };
+    [titleMaking drawInRect:CGRectMake(0, isOverFlow ? 3 : 1, rect.size.width, rect.size.height - 6) withAttributes:attributesMaking];
+}
 
--(EBGAnimationView *)liquidAnimationView
+#pragma mark - getter & setter
+- (EBGAnimationView *)liquidAnimationView
 {
     if (!_liquidAnimationView) {
         _liquidAnimationView = [[EBGAnimationView alloc] initWithFrame:KEY_WINDOW.bounds];
@@ -113,22 +132,26 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
     return _liquidAnimationView;
 }
 
-- (void)setBagdeNumber:(int)bagdeNumber {
-    _bagdeNumber = bagdeNumber;
+- (void)setBadgeNumber:(int)badgeNumber
+{
+    _badgeNumber = badgeNumber;
     [self setNeedsDisplay];
 }
 
--(void)drawRect:(CGRect)rect {
-    NSMutableParagraphStyle *paragraphMaking = [[NSMutableParagraphStyle alloc] init];
-    paragraphMaking.alignment = NSTextAlignmentCenter;
-    BOOL isOverFlow = self.bagdeNumber > 99;
-    NSString *titleMaking = isOverFlow ? @"99+" : [NSString stringWithFormat:@"%d",self.bagdeNumber];
-    NSDictionary *attributesMaking = @{
-                                       NSParagraphStyleAttributeName:paragraphMaking,
-                                       NSFontAttributeName:[UIFont boldSystemFontOfSize:isOverFlow ? 10: 15],
-                                       NSForegroundColorAttributeName:[UIColor whiteColor],
-                                       };
-    [titleMaking drawInRect:CGRectMake(0, isOverFlow ? 3 : 1, rect.size.width, rect.size.height - 6) withAttributes:attributesMaking];
+- (void)setBadgeBackgroundColor:(UIColor *)badgeBackgroundColor
+{
+    _badgeBackgroundColor = badgeBackgroundColor;
+    self.backgroundColor = badgeBackgroundColor;
+    [self.liquidAnimationView setBorderColor:badgeBackgroundColor];
+    [self setNeedsDisplay];
+}
+
+- (void)setBadgeTextColor:(UIColor *)badgeTextColor
+{
+    _badgeTextColor = badgeTextColor;
+    [self.liquidAnimationView setBadgeTextColor:badgeTextColor];
+    [self setNeedsDisplay];
+    
 }
 
 @end

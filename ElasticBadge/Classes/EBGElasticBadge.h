@@ -10,8 +10,9 @@
 
 @interface EBGElasticBadge : UIView
 
-@property (nonatomic, assign, readonly) int bagdeNumber;
-@property (nonatomic, strong) UIColor *HQ_textColor;
+@property (nonatomic, assign, readonly) int badgeNumber;
+@property (nonatomic, strong) UIColor *badgeBackgroundColor;
+@property (nonatomic, strong) UIColor *badgeTextColor;
 
 -(instancetype)initWithLocationCenter:(CGPoint)center
                           bagdeNumber:(int)badgeNumber

@@ -78,7 +78,7 @@
         NSDictionary *attributesMaking = @{
                                            NSParagraphStyleAttributeName:paragraphMaking,
                                            NSFontAttributeName:[UIFont boldSystemFontOfSize:isOverFlow ? 10: 15],
-                                           NSForegroundColorAttributeName:[UIColor whiteColor],
+                                           NSForegroundColorAttributeName:self.badgeTextColor,
                                            };
         float offset = isOverFlow ? 3 : 0;
         [titleMaking drawInRect:CGRectMake(_currentMovingPoint.x - 10, _currentMovingPoint.y - 10 +offset, 20, 20) withAttributes:attributesMaking];
@@ -181,6 +181,14 @@
         _borderColor = [UIColor redColor];
     }
     return _borderColor;
+}
+
+-(UIColor *)badgeTextColor
+{
+    if (!_badgeTextColor) {
+        _badgeTextColor = [UIColor whiteColor];
+    }
+    return _badgeTextColor;
 }
 
 @end

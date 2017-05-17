@@ -32,6 +32,7 @@ static inline CGFloat distanceBetweenPoints (CGPoint pointA, CGPoint pointB) {
 @property (nonatomic, assign) float radius;
 
 @property (nonatomic, strong) UIColor *borderColor;
+@property (nonatomic, strong) UIColor *badgeTextColor;
 
 -(void)clearViewState;
 
