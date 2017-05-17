@@ -13,8 +13,6 @@
 
 #define LAST_WINDOW [[UIApplication sharedApplication].windows lastObject]
 
-typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
-
 
 @interface EBGElasticBadge()
 
@@ -27,7 +25,7 @@ typedef void(^willDismissCallBack)(EBGElasticBadge *liquidButton);
 /**
  消失时的回调
  */
-@property (nonatomic, copy) willDismissCallBack dismissCallBackBlock;
+@property (nonatomic, copy) void(^dismissCallBackBlock)(EBGElasticBadge *liquidButton);
 
 @property (nonatomic, assign) CGPoint touchesStartPotin;
 
