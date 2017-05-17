@@ -10,7 +10,7 @@
 
 @interface EBGElasticBadge : UIView
 
-@property (nonatomic, assign, readonly) int badgeNumber;
+@property (nonatomic, assign) int badgeNumber;
 @property (nonatomic, strong) UIColor *badgeBackgroundColor;
 @property (nonatomic, strong) UIColor *badgeTextColor;
 

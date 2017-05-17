@@ -115,7 +115,9 @@
 - (UIBezierPath* )bezierPathWithFromPoint:(CGPoint)fromPoint
                                   toPoint:(CGPoint)toPoint
                                fromRadius:(CGFloat)fromRadius
-                                 toRadius:(CGFloat)toRadius scale:(CGFloat)scale{
+                                 toRadius:(CGFloat)toRadius
+                                    scale:(CGFloat)scale
+{
     UIBezierPath* path = [[UIBezierPath alloc] init];
     CGFloat r = distanceBetweenPoints(fromPoint, toPoint);
     CGFloat offsetY = fabs(fromRadius-toRadius);
