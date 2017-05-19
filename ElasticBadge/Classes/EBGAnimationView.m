@@ -8,10 +8,9 @@
 
 #import "EBGAnimationView.h"
 
-#define kFromRadiusScaleCoefficient     0.09f
-#define kToRadiusScaleCoefficient       0.05f
-#define kMaxDistanceScaleCoefficient    8.0f
-
+static CGFloat kFromRadiusScaleCoefficient = 0.09f;
+static CGFloat kToRadiusScaleCoefficient = 0.05f;
+static CGFloat kMaxDistanceScaleCoefficient = 8.f;
 
 @interface EBGAnimationView()
 
@@ -118,8 +117,9 @@
                                  toRadius:(CGFloat)toRadius
                                     scale:(CGFloat)scale
 {
-    UIBezierPath* path = [[UIBezierPath alloc] init];
     CGFloat r = distanceBetweenPoints(fromPoint, toPoint);
+    
+    UIBezierPath* path = [[UIBezierPath alloc] init];
     CGFloat offsetY = fabs(fromRadius-toRadius);
     if (r <= offsetY) {
         CGPoint center;

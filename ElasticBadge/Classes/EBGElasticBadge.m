@@ -13,9 +13,10 @@
 
 #define LAST_WINDOW [[UIApplication sharedApplication].windows lastObject]
 
+static CGFloat kBadgeBorderLength = 20.f;
+
 
 @interface EBGElasticBadge()
-
 
 /**
  实际展示绘制动画的页面
@@ -41,9 +42,9 @@
     self = [super init];
     if (self) {
         
-        self.frame = CGRectMake(0, 0, 20, 20);
+        self.frame = CGRectMake(0, 0, kBadgeBorderLength, kBadgeBorderLength);
         self.center = center;
-        self.layer.cornerRadius = 10;
+        self.layer.cornerRadius = kBadgeBorderLength * 0.5f;
         self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor redColor];
         
@@ -67,10 +68,10 @@
         {
             self.hidden = YES;
             [[[UIApplication sharedApplication].windows lastObject] addSubview:self.liquidAnimationView];
-            CGPoint originCenter = [self convertPoint:CGPointMake(10, 10) toView:(UIWindow *)LAST_WINDOW];
+            CGPoint originCenter = [self convertPoint:CGPointMake(kBadgeBorderLength * 0.5f, kBadgeBorderLength * 0.5f) toView:(UIWindow *)LAST_WINDOW];
             self.touchesStartPotin = currentPoint;
             self.liquidAnimationView.oringinCenter = originCenter;
-            self.liquidAnimationView.radius = 10;
+            self.liquidAnimationView.radius = kBadgeBorderLength * 0.5f;
             self.liquidAnimationView.badgeNumber = self.badgeNumber;
             [self.liquidAnimationView clearViewState];
         }
