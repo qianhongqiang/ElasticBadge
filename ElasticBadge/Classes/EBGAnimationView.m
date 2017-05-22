@@ -104,9 +104,10 @@ static CGFloat kMaxDistanceScaleCoefficient = 8.f;
 #pragma mark - private
 - (void)updateRadius {
     CGFloat r = distanceBetweenPoints(_oringinCenter, _currentMovingPoint);
-    _fromRadius = self.radius-kFromRadiusScaleCoefficient*r;
-    _toRadius = self.radius-kToRadiusScaleCoefficient*r;
-    _viscosity = 1.0-r/_maxDistance;
+    
+    self.fromRadius = self.radius-kFromRadiusScaleCoefficient*r;
+    self.toRadius = self.radius-kToRadiusScaleCoefficient*r;
+    self.viscosity = 1.0-r/_maxDistance;
     
     [self setNeedsDisplay];
 }
