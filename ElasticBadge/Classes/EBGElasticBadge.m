@@ -28,7 +28,7 @@ static CGFloat kBadgeBorderLength = 20.f;
  */
 @property (nonatomic, copy) void(^dismissCallBackBlock)(EBGElasticBadge *liquidButton);
 
-@property (nonatomic, assign) CGPoint touchesStartPotin;
+@property (nonatomic, assign) CGPoint touchesStartPoint;
 
 @end
 
@@ -69,7 +69,7 @@ static CGFloat kBadgeBorderLength = 20.f;
             self.hidden = YES;
             [[[UIApplication sharedApplication].windows lastObject] addSubview:self.liquidAnimationView];
             CGPoint originCenter = [self convertPoint:CGPointMake(kBadgeBorderLength * 0.5f, kBadgeBorderLength * 0.5f) toView:(UIWindow *)LAST_WINDOW];
-            self.touchesStartPotin = currentPoint;
+            self.touchesStartPoint = currentPoint;
             self.liquidAnimationView.oringinCenter = originCenter;
             self.liquidAnimationView.radius = kBadgeBorderLength * 0.5f;
             self.liquidAnimationView.badgeNumber = self.badgeNumber;
@@ -84,7 +84,7 @@ static CGFloat kBadgeBorderLength = 20.f;
         case UIGestureRecognizerStateEnded:
         {
             self.hidden = NO;
-            if (distanceBetweenPoints(self.touchesStartPotin, currentPoint) > self.liquidAnimationView.radius * 8) {
+            if (distanceBetweenPoints(self.touchesStartPoint, currentPoint) > self.liquidAnimationView.radius * 8) {
                 if (self.dismissCallBackBlock) {
                     self.dismissCallBackBlock(self);
                 }
